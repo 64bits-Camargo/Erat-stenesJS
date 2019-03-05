@@ -13,7 +13,7 @@ function createTable(){
  const numberTable = crivoWidth * crivoHeight
 
     for (i = 0; i < numberTable; i++){
-        crivoArray[i] = 0
+        crivoArray[i] = i
     }
 }
 
