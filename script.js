@@ -22,7 +22,7 @@ function createArray(){
 
 // Identify multiple of two
 function mult2(){
-    for (i = 1; i <= numberTable; i++){
+    for (i = 3; i <= numberTable; i++){
         if (((crivoArray[i] = i) % 2) == 0){
             crivoArray[i] = i + " é múltiplo de 2"
         }
