@@ -6,7 +6,6 @@ const numberTable = (crivoWidth * crivoHeight)
 
 
 function start(){
-    crivoEros()
 }
 
 // write numbers primos
