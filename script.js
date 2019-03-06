@@ -17,9 +17,11 @@ function createTable(){
     }
 }
 
-function crivoEratostenes(){
-   
-}
+function mult2(){
+    for (i = 1; i <= numberTable; i++){
+        if (((crivoArray[i] = i) % 2) == 0){
+            crivoArray[i] = i + " é múltiplo de 2"
+        }
 
 function renderCrivo(){
     html = '<table cellpadding=0 cellspacing=0>'
