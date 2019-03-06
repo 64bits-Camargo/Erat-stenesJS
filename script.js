@@ -1,18 +1,19 @@
-var rangeNumber = 20
-const crivoArray = []
+var rangeNumber = 17
+var crivoArray = []
 const crivoWidth = 10
 const crivoHeight = rangeNumber / crivoWidth
+const numberTable = (crivoWidth * crivoHeight)
 
 
 function start(){
     createTable()
-    renderCrivo()
+    mult2()
+
+    console.table(crivoArray)
 }
 
 function createTable(){
- const numberTable = crivoWidth * crivoHeight
-
-    for (i = 0; i < numberTable; i++){
+    for (i = 1; i <= numberTable; i++){
         crivoArray[i] = i
     }
 }
@@ -22,29 +23,7 @@ function mult2(){
         if (((crivoArray[i] = i) % 2) == 0){
             crivoArray[i] = i + " é múltiplo de 2"
         }
-
-function renderCrivo(){
-    html = '<table cellpadding=0 cellspacing=0>'
-
-    for (row = 0; row < crivoHeight; row++){
-        html += '<tr>'
-
-        for (column = 0; column < crivoWidth; column++){
-            const tableIndex = column + (crivoWidth * row)
-
-            
-
-            html += '<td>'
-            html += tableIndex+1
-            html += '</td>'
-        }
-        
-        html += '</tr>'
     }
-
-    html += '</table>'
-
-    document.querySelector('#crivoCanvas').innerHTML = html
 }
 
 start()
